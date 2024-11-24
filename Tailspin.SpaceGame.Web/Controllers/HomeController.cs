@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TailSpin.SpaceGame.Web.Models;
+// This is a home controller class.
 
 namespace TailSpin.SpaceGame.Web.Controllers
 {
