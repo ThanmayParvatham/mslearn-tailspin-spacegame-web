@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'SelfHosted'
+  name: Default
 
 variables:
   buildConfiguration: 'Release'
