@@ -21,8 +21,12 @@ steps:
 #     verbose: true
 #     customCommand: 'install --force'
 
-- script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+# - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+#   displayName: 'Compile Sass assets'
+
+- script: 'D:\Learnings\DevOpsProjects\vsts-agent-win-x64-3.245.0\_work\1\s\node_modules\.bin\node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
+
 
 - task: gulp@1
   displayName: 'Run gulp tasks'
