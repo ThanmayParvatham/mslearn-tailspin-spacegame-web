@@ -14,10 +14,15 @@ steps:
     packageType: sdk
     version: '6.x'
 
-- task: Npm@1
-  displayName: 'Run npm install'
+- task: NodeTool@0
+  displayName: 'Node Tool'
   inputs:
-    command: 'install'
+    versionSpec: '12.x'
+
+# - task: Npm@1
+#   displayName: 'Run npm install'
+#   inputs:
+#     command: 'install'
     # verbose: false
     # customCommand: 'install --force'
 
